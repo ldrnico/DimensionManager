@@ -1,33 +1,11 @@
-# Paper Kotlin Plugin Template
+# Paper Kotlin Template (Minecraft 26.2)
 
-A pre-configured Gradle template for Minecraft 26.2 plugin development using **Kotlin**, **ShadowJar**, and the **`run-paper`** test server plugin.
+Minimal Template for Paper Plugin Development using Kotlin, ShadowJar, and `run-paper`.
 
-## Configuration Guide (`build.gradle.kts`)
+## Instructions
 
-### Test Server RAM (Optional)
+- Remember to adjust your `plugin.yml` (`src/main/resources/plugin.yml`) with your plugin's metadata (`name`, `main`, etc.).
 
-Adjust the allocated memory for the test server as needed:
+## Run Server
 
-```kotlin
-tasks {
-    runServer {
-        jvmArgs("-Xms2G", "-Xmx2G")
-    }
-}
-```
-
-## Running the Server & Development
-
-Manual copying of the plugin file is not required.
-
-Run the following command in your terminal, or select `Tasks -> run -> runServer` in the IntelliJ Gradle tab:
-
-```bash
-./gradlew runServer
-```
-
-**Automated Build Process:**
-
-1. The plugin is built using `shadowJar`.
-2. The output JAR is automatically copied to the internal test server directory (`run/plugins`).
-3. The Paper test server boots up with the updated plugin on version 26.2.
+Execute `./gradlew runServer` or run the `runServer` Gradle task. The build, ShadowJar packaging, and plugin deployment to `run/plugins` are handled automatically.
