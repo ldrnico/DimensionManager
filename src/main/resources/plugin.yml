@@ -1,0 +1,6 @@
+name: paper-kotlin-template
+version: '${version}'
+
+main: de.melonengolemm.paperKotlinTemplate.PaperKotlinTemplate
+api-version: '26.2'
+load: POSTWORLD
