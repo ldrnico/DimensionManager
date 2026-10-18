@@ -2,9 +2,12 @@
 
 Minimal Template for Paper Plugin Development using Kotlin, ShadowJar, and `run-paper`.
 
-## Instructions
+## Setup
 
-- Remember to adjust your `plugin.yml` (`src/main/resources/plugin.yml`) with your plugin's metadata (`name`, `main`, etc.).
+Adjust the following for your project:
+
+- **`gradle.properties`**: Update `group` (e.g., `com.example.plugin`).
+- **`src/main/resources/plugin.yml`**: Update `name`, `main`, and other metadata.
 
 ## Run Server
 
