@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class PaperKotlinTemplate : JavaPlugin() {
 
     override fun onEnable() {
-        println("${ChatColor.GREEN}Template enabled!")
+        println("Template enabled!")
     }
 
     override fun onDisable() {
