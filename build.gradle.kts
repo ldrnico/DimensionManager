@@ -28,7 +28,12 @@ tasks {
         // This is the only required configuration besides applying the plugin.
         // Your plugin's jar (or shadowJar if present) will be used automatically.
         minecraftVersion("26.2")
+        pluginJars.from(shadowJar)
         jvmArgs("-Xms2G", "-Xmx2G")
+    }
+
+    named("runServer") {
+        dependsOn(shadowJar)
     }
 
     processResources {
@@ -39,7 +44,7 @@ tasks {
     }
 }
 
-val targetDir = "C:/Users/Nico/Desktop/TestServer/plugins"
+val targetDir = "run/plugins"
 
 tasks.register<Copy>("copyPlugin") {
     from(tasks.named("shadowJar"))
