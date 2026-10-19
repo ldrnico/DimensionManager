@@ -1,6 +1,6 @@
-name: paper-kotlin-template
+name: DimensionManager
 version: '${version}'
 
-main: de.melonengolemm.paperKotlinTemplate.PaperKotlinTemplate
+main: de.melonengolemm.dimensionManager.DimensionManager
 api-version: '26.2'
 load: POSTWORLD
