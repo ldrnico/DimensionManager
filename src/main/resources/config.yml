@@ -1,0 +1,7 @@
+dimensions:
+  nether:
+    status: open
+  overworld:
+    status: open
+  end:
+    status: open

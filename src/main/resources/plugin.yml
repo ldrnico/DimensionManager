@@ -4,3 +4,21 @@ version: '${version}'
 main: de.melonengolemm.dimensionManager.DimensionManager
 api-version: '26.2'
 load: POSTWORLD
+
+permissions:
+    dimensionmanager.command:
+        description: Allows basic access to the DimensionManager command.
+        default: op
+    dimensionmanager.config.reload:
+        description: Allows reloading the plugin config.
+        default: op
+    dimensionmanager.dimension.manage:
+        description: Allows managing overworld/nether/end dimensions.
+        default: op
+
+commands:
+    dimensionmanager:
+        description: Admin command for DimensionManager
+        usage: /dm config reload | /dm <overworld|nether|end> <open|close|info>
+        permission: dimensionmanager.command
+        aliases: [dm]
