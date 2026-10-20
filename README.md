@@ -1,6 +1,6 @@
 # DimensionManager
 
-**DimensionManager** is a lightweight, feature-packed Paper/Spigot plugin designed to give server administrators full control over Minecraft dimensions. It allows you to dynamically open or close the Overworld, Nether, and The End in real time, complete with customizable broadcast alerts, sound effects, live tablist status tracking, and portal protection.
+**DimensionManager** is a lightweigh Paper/Spigot plugin designed to give server administrators full control over Minecraft dimensions. It allows you to dynamically open or close the Overworld, Nether, and The End in real time, complete with customizable broadcast alerts, sound effects, live tablist status tracking, and portal protection.
 
 ---
 
