@@ -116,18 +116,6 @@ sound:
 
 ---
 
-## 🛠️ Building from Source
-
-This project uses Gradle with Kotlin DSL. To compile the plugin:
-
-```bash
-./gradlew build
-```
-
-The compiled jar file will be located in `build/libs/`.
-
----
-
 ## 👤 Author
 
 Developed by **melonengolemm**.
