@@ -15,10 +15,17 @@ permissions:
     dimensionmanager.dimension.manage:
         description: Allows managing overworld/nether/end dimensions.
         default: op
+    dimensionmanager.admin:
+        description: Full administrative access to DimensionManager.
+        default: op
+        children:
+            dimensionmanager.command: true
+            dimensionmanager.config.reload: true
+            dimensionmanager.dimension.manage: true
 
 commands:
     dimensionmanager:
         description: Admin command for DimensionManager
-        usage: /dm config reload | /dm <overworld|nether|end> <open|close|info>
+        usage: /dm config [reload] | /dm <overworld|nether|end> <open|close|info>
         permission: dimensionmanager.command
         aliases: [dm]

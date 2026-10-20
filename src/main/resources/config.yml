@@ -1,7 +1,43 @@
 dimensions:
   nether:
-    status: open
+    is-open: true
   overworld:
-    status: open
+    is-open: true
   end:
-    status: open
+    is-open: true
+
+
+tablist:
+  enabled: true
+  format: "\n Overworld: §a$overworld | Nether: §a$nether | End: §a$end"
+  nether:
+    open: "§aOpen"
+    closed: "§cClosed"
+  overworld:
+    open: "§aOpen"
+    closed: "§cClosed"
+  end:
+    open: "§aOpen"
+    closed: "§cClosed"
+
+alerts:
+  enabled: true
+  format:
+    prefix: §7[§bDimensionManager§7] §r
+    end-open: §aThe End is now open!
+    end-close: §cThe End is now closed!
+    nether-open: §aThe Nether is now open!
+    nether-close: §cThe Nether is now closed!
+    overworld-open: §aThe Overworld is now open!
+    overworld-close: §cThe Overworld is now closed!
+
+sound:
+  enabled: true
+  volume: 0.1
+  format:
+    end-open: ENTITY_ENDER_DRAGON_GROWL
+    end-close: ENTITY_ENDER_DRAGON_DEATH
+    nether-open: ENTITY_WITHER_SPAWN
+    nether-close: ENTITY_WITHER_DEATH
+    overworld-open: ENTITY_PLAYER_LEVELUP
+    overworld-close: ENTITY_PLAYER_HURT
